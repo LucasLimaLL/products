@@ -1,0 +1,32 @@
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "name": "contextLoads",
+                    "type": "function",
+                    "static": false,
+                    "location": "com/lucaslima/products/ProductsApplicationTests.java:11"
+                  }
+                ],
+                "name": "ProductsApplicationTests",
+                "type": "class"
+              }
+            ],
+            "name": "products",
+            "type": "package"
+          }
+        ],
+        "name": "lucaslima",
+        "type": "package"
+      }
+    ],
+    "name": "com",
+    "type": "package"
+  }
+]

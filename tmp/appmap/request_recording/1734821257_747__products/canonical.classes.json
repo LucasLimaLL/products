@@ -1,0 +1,12 @@
+[
+  "com/lucaslima/products/api/rest/controller/CreateProductController",
+  "com/lucaslima/products/application/services/CreateProductService",
+  "com/lucaslima/products/application/services/IdempotencyProductService",
+  "com/lucaslima/products/core/entities/Product",
+  "com/lucaslima/products/core/factories/ProductFactory",
+  "com/lucaslima/products/infra/dataproviders/CreateProductDataProvider",
+  "com/lucaslima/products/infra/dataproviders/IdempotencyProductDataProvider",
+  "com/lucaslima/products/infra/presenters/ProductPresenter",
+  "com/lucaslima/products/persistence/entities/ProductEntity",
+  "com/lucaslima/products/persistence/entities/ProductEntity$ProductEntityBuilder"
+]

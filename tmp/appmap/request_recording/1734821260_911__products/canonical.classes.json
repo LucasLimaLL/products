@@ -1,0 +1,7 @@
+[
+  "com/lucaslima/products/api/rest/controller/CreateProductController",
+  "com/lucaslima/products/application/services/IdempotencyProductService",
+  "com/lucaslima/products/core/factories/ProductFactory",
+  "com/lucaslima/products/infra/dataproviders/IdempotencyProductDataProvider",
+  "com/lucaslima/products/infra/presenters/ProductPresenter"
+]

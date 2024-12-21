@@ -1,0 +1,9 @@
+[
+  "com/lucaslima/products/api/rest/controller",
+  "com/lucaslima/products/application/services",
+  "com/lucaslima/products/core/entities",
+  "com/lucaslima/products/core/factories",
+  "com/lucaslima/products/infra/dataproviders",
+  "com/lucaslima/products/infra/presenters",
+  "com/lucaslima/products/persistence/entities"
+]

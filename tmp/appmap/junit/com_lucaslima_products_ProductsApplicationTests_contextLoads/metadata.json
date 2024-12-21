@@ -1,0 +1,34 @@
+{
+  "name": "Products applications context loads",
+  "app": "products",
+  "language": {
+    "name": "java",
+    "version": "21+35-LTS-2513",
+    "engine": "Java HotSpot(TM) 64-Bit Server VM"
+  },
+  "client": {
+    "name": "appmap-java",
+    "url": "https://github.com/appland/appmap-java"
+  },
+  "recorder": {
+    "name": "junit",
+    "type": "tests"
+  },
+  "recording": {
+    "defined_class": "com.lucaslima.products.ProductsApplicationTests",
+    "method_id": "contextLoads"
+  },
+  "git": {
+    "repository": "https://github.com/LucasLimaLL/products.git",
+    "branch": "develop",
+    "commit": "df45bfc8c38682f4405ca19b7b16a0c4fd64246f"
+  },
+  "source_location": "com/lucaslima/products/ProductsApplicationTests.java:11",
+  "frameworks": [
+    {
+      "name": "JUnit",
+      "version": "5"
+    }
+  ],
+  "test_status": "succeeded"
+}
