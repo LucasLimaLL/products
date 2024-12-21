@@ -1,0 +1,296 @@
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "name": "build",
+                            "type": "function",
+                            "static": false,
+                            "location": "com/lucaslima/products/persistence/entities/ProductEntity.java:23"
+                          },
+                          {
+                            "name": "withId",
+                            "type": "function",
+                            "static": false,
+                            "location": "com/lucaslima/products/persistence/entities/ProductEntity.java:23"
+                          },
+                          {
+                            "name": "withCreatedAt",
+                            "type": "function",
+                            "static": false,
+                            "location": "com/lucaslima/products/persistence/entities/ProductEntity.java:23"
+                          },
+                          {
+                            "name": "withDescription",
+                            "type": "function",
+                            "static": false,
+                            "location": "com/lucaslima/products/persistence/entities/ProductEntity.java:23"
+                          },
+                          {
+                            "name": "withPrice",
+                            "type": "function",
+                            "static": false,
+                            "location": "com/lucaslima/products/persistence/entities/ProductEntity.java:23"
+                          },
+                          {
+                            "name": "withName",
+                            "type": "function",
+                            "static": false,
+                            "location": "com/lucaslima/products/persistence/entities/ProductEntity.java:23"
+                          }
+                        ],
+                        "name": "ProductEntity$ProductEntityBuilder",
+                        "type": "class"
+                      },
+                      {
+                        "children": [
+                          {
+                            "name": "toEntity",
+                            "type": "function",
+                            "static": true,
+                            "location": "com/lucaslima/products/persistence/entities/ProductEntity.java:34"
+                          },
+                          {
+                            "name": "builder",
+                            "type": "function",
+                            "static": true,
+                            "location": "com/lucaslima/products/persistence/entities/ProductEntity.java:23"
+                          },
+                          {
+                            "name": "toDomain",
+                            "type": "function",
+                            "static": true,
+                            "location": "com/lucaslima/products/persistence/entities/ProductEntity.java:45"
+                          }
+                        ],
+                        "name": "ProductEntity",
+                        "type": "class"
+                      }
+                    ],
+                    "name": "entities",
+                    "type": "package"
+                  }
+                ],
+                "name": "persistence",
+                "type": "package"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "name": "create",
+                            "type": "function",
+                            "static": false,
+                            "location": "com/lucaslima/products/infra/dataproviders/CreateProductDataProvider.java:23"
+                          }
+                        ],
+                        "name": "CreateProductDataProvider",
+                        "type": "class"
+                      },
+                      {
+                        "children": [
+                          {
+                            "name": "isDuplicate",
+                            "type": "function",
+                            "static": false,
+                            "location": "com/lucaslima/products/infra/dataproviders/IdempotencyProductDataProvider.java:27"
+                          }
+                        ],
+                        "name": "IdempotencyProductDataProvider",
+                        "type": "class"
+                      }
+                    ],
+                    "name": "dataproviders",
+                    "type": "package"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "name": "toDto",
+                            "type": "function",
+                            "static": false,
+                            "location": "com/lucaslima/products/infra/presenters/ProductPresenter.java:20"
+                          },
+                          {
+                            "name": "toDomain",
+                            "type": "function",
+                            "static": false,
+                            "location": "com/lucaslima/products/infra/presenters/ProductPresenter.java:24"
+                          }
+                        ],
+                        "name": "ProductPresenter",
+                        "type": "class"
+                      }
+                    ],
+                    "name": "presenters",
+                    "type": "package"
+                  }
+                ],
+                "name": "infra",
+                "type": "package"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "name": "create",
+                                "type": "function",
+                                "static": false,
+                                "location": "com/lucaslima/products/api/rest/controller/CreateProductController.java:40"
+                              }
+                            ],
+                            "name": "CreateProductController",
+                            "type": "class"
+                          }
+                        ],
+                        "name": "controller",
+                        "type": "package"
+                      }
+                    ],
+                    "name": "rest",
+                    "type": "package"
+                  }
+                ],
+                "name": "api",
+                "type": "package"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "name": "createProductWithIdNameDescriptionPriceCreateAt",
+                            "type": "function",
+                            "static": false,
+                            "location": "com/lucaslima/products/core/factories/ProductFactory.java:24"
+                          }
+                        ],
+                        "name": "ProductFactory",
+                        "type": "class"
+                      }
+                    ],
+                    "name": "factories",
+                    "type": "package"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "name": "withId",
+                            "type": "function",
+                            "static": false,
+                            "location": "com/lucaslima/products/core/entities/Product.java:43"
+                          }
+                        ],
+                        "name": "Product",
+                        "type": "class"
+                      }
+                    ],
+                    "name": "entities",
+                    "type": "package"
+                  }
+                ],
+                "name": "core",
+                "type": "package"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "name": "create",
+                            "type": "function",
+                            "static": false,
+                            "location": "com/lucaslima/products/application/services/CreateProductService.java:17"
+                          }
+                        ],
+                        "name": "CreateProductService",
+                        "type": "class"
+                      },
+                      {
+                        "children": [
+                          {
+                            "name": "isDuplicate",
+                            "type": "function",
+                            "static": false,
+                            "location": "com/lucaslima/products/application/services/IdempotencyProductService.java:40"
+                          },
+                          {
+                            "name": "isDuplicate",
+                            "type": "function",
+                            "static": false,
+                            "location": "com/lucaslima/products/application/services/IdempotencyProductService.java:23"
+                          }
+                        ],
+                        "name": "IdempotencyProductService",
+                        "type": "class"
+                      }
+                    ],
+                    "name": "services",
+                    "type": "package"
+                  }
+                ],
+                "name": "application",
+                "type": "package"
+              }
+            ],
+            "name": "products",
+            "type": "package"
+          }
+        ],
+        "name": "lucaslima",
+        "type": "package"
+      }
+    ],
+    "name": "com",
+    "type": "package"
+  },
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "POST /products"
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "select pe1_0.id,pe1_0.created_at,pe1_0.description,pe1_0.name,pe1_0.price from products pe1_0 where pe1_0.id=?"
+      },
+      {
+        "type": "query",
+        "name": "insert into products (created_at,description,name,price,id) values (?,?,?,?,?)"
+      }
+    ]
+  }
+]

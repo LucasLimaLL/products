@@ -1,0 +1,93 @@
+{
+  "events": [
+    {
+      "defined_class": "com.lucaslima.products.ProductsApplicationTests",
+      "event": "call",
+      "id": 1,
+      "lineno": 11,
+      "method_id": "contextLoads",
+      "path": "com/lucaslima/products/ProductsApplicationTests.java",
+      "receiver": {
+        "class": "com.lucaslima.products.ProductsApplicationTests",
+        "object_id": 2090782110,
+        "value": "com.lucaslima.products.ProductsApplicationTests@7c9ecd9e"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 2,
+      "parent_id": 1,
+      "thread_id": 1
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "Products applications context loads",
+    "app": "products",
+    "language": {
+      "name": "java",
+      "version": "21+35-LTS-2513",
+      "engine": "Java HotSpot(TM) 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "junit",
+      "type": "tests"
+    },
+    "recording": {
+      "defined_class": "com.lucaslima.products.ProductsApplicationTests",
+      "method_id": "contextLoads"
+    },
+    "git": {
+      "repository": "https://github.com/LucasLimaLL/products.git",
+      "branch": "develop",
+      "commit": "df45bfc8c38682f4405ca19b7b16a0c4fd64246f"
+    },
+    "source_location": "com/lucaslima/products/ProductsApplicationTests.java:11",
+    "frameworks": [
+      {
+        "name": "JUnit",
+        "version": "5"
+      }
+    ],
+    "test_status": "succeeded"
+  },
+  "classMap": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "name": "contextLoads",
+                      "type": "function",
+                      "static": false,
+                      "location": "com/lucaslima/products/ProductsApplicationTests.java:11"
+                    }
+                  ],
+                  "name": "ProductsApplicationTests",
+                  "type": "class"
+                }
+              ],
+              "name": "products",
+              "type": "package"
+            }
+          ],
+          "name": "lucaslima",
+          "type": "package"
+        }
+      ],
+      "name": "com",
+      "type": "package"
+    }
+  ]
+}

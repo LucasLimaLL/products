@@ -1,0 +1,429 @@
+{
+  "events": [
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {
+          "content-length": "78",
+          "idempotency-key": "fc04fdcc-65fc-4047-a372-649f803f2b49",
+          "cookie": "JSESSIONID=B01C9FB0C3D3A6D2945DFC08BFE883B1",
+          "host": "localhost:8081",
+          "content-type": "application/json",
+          "user-agent": "Insomnia/2023.5.7",
+          "accept": "*/*"
+        },
+        "normalized_path_info": "/products",
+        "path_info": "/products",
+        "protocol": "HTTP/1.1",
+        "request_method": "POST"
+      },
+      "id": 1,
+      "thread_id": 55
+    },
+    {
+      "defined_class": "com.lucaslima.products.api.rest.controller.CreateProductController",
+      "event": "call",
+      "id": 2,
+      "lineno": 40,
+      "method_id": "create",
+      "parameters": [
+        {
+          "class": "java.util.LinkedHashMap",
+          "kind": "req",
+          "name": "headers",
+          "object_id": 1960686095,
+          "value": "{host=localhost:8081, cookie=JSESSIONID=B01C9FB0C3D3A6D2945DFC08BFE883B1, content-type=application/json, user-agent=Insomnia/2023.5.7, idempotency-key=fc04fdcc-65fc-4047-a372-649f803f2b49, accept=*/*, content-length=78}"
+        },
+        {
+          "class": "com.lucaslima.products.api.rest.dto.ProductDto",
+          "kind": "req",
+          "name": "productDto",
+          "object_id": 1893869644,
+          "value": "ProductDto[id=null, name=Foto Ana Vitória Miranda, description=a, price=10.48, createdAt=null]"
+        }
+      ],
+      "path": "com/lucaslima/products/api/rest/controller/CreateProductController.java",
+      "receiver": {
+        "class": "com.lucaslima.products.api.rest.controller.CreateProductController",
+        "object_id": 2023975628,
+        "value": "com.lucaslima.products.api.rest.controller.CreateProductController@78a36acc"
+      },
+      "static": false,
+      "thread_id": 55
+    },
+    {
+      "defined_class": "com.lucaslima.products.infra.presenters.ProductPresenter",
+      "event": "call",
+      "id": 3,
+      "lineno": 24,
+      "method_id": "toDomain",
+      "parameters": [
+        {
+          "class": "com.lucaslima.products.api.rest.dto.ProductDto",
+          "kind": "req",
+          "name": "product",
+          "object_id": 1893869644,
+          "value": "ProductDto[id=null, name=Foto Ana Vitória Miranda, description=a, price=10.48, createdAt=null]"
+        }
+      ],
+      "path": "com/lucaslima/products/infra/presenters/ProductPresenter.java",
+      "receiver": {
+        "class": "com.lucaslima.products.infra.presenters.ProductPresenter",
+        "object_id": 903919668,
+        "value": "com.lucaslima.products.infra.presenters.ProductPresenter@35e0b834"
+      },
+      "static": false,
+      "thread_id": 55
+    },
+    {
+      "defined_class": "com.lucaslima.products.core.factories.ProductFactory",
+      "event": "call",
+      "id": 4,
+      "lineno": 24,
+      "method_id": "createProductWithIdNameDescriptionPriceCreateAt",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "id",
+          "object_id": 0
+        },
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "name",
+          "object_id": 491458071,
+          "value": "Foto Ana Vitória Miranda"
+        },
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "description",
+          "object_id": 69175931,
+          "value": "a"
+        },
+        {
+          "class": "java.math.BigDecimal",
+          "kind": "req",
+          "name": "price",
+          "object_id": 1700684540,
+          "value": "10.48"
+        },
+        {
+          "class": "java.time.ZonedDateTime",
+          "kind": "req",
+          "name": "createdAt",
+          "object_id": 0
+        }
+      ],
+      "path": "com/lucaslima/products/core/factories/ProductFactory.java",
+      "receiver": {
+        "class": "com.lucaslima.products.core.factories.ProductFactory",
+        "object_id": 1439647611,
+        "value": "com.lucaslima.products.core.factories.ProductFactory@55cf477b"
+      },
+      "static": false,
+      "thread_id": 55
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 5,
+      "parent_id": 4,
+      "return_value": {
+        "class": "com.lucaslima.products.core.entities.Product",
+        "object_id": 280084579,
+        "value": "com.lucaslima.products.core.entities.Product@10b1c063"
+      },
+      "thread_id": 55
+    },
+    {
+      "elapsed": 0.00019997,
+      "event": "return",
+      "id": 6,
+      "parent_id": 3,
+      "return_value": {
+        "class": "com.lucaslima.products.core.entities.Product",
+        "object_id": 280084579,
+        "value": "com.lucaslima.products.core.entities.Product@10b1c063"
+      },
+      "thread_id": 55
+    },
+    {
+      "defined_class": "com.lucaslima.products.application.services.IdempotencyProductService",
+      "event": "call",
+      "id": 7,
+      "lineno": 23,
+      "method_id": "isDuplicate",
+      "parameters": [
+        {
+          "class": "java.util.LinkedHashMap",
+          "kind": "req",
+          "name": "headers",
+          "object_id": 1960686095,
+          "value": "{host=localhost:8081, cookie=JSESSIONID=B01C9FB0C3D3A6D2945DFC08BFE883B1, content-type=application/json, user-agent=Insomnia/2023.5.7, idempotency-key=fc04fdcc-65fc-4047-a372-649f803f2b49, accept=*/*, content-length=78}"
+        }
+      ],
+      "path": "com/lucaslima/products/application/services/IdempotencyProductService.java",
+      "receiver": {
+        "class": "com.lucaslima.products.application.services.IdempotencyProductService",
+        "object_id": 116235931,
+        "value": "com.lucaslima.products.application.services.IdempotencyProductService@6ed9e9b"
+      },
+      "static": false,
+      "thread_id": 55
+    },
+    {
+      "defined_class": "com.lucaslima.products.infra.dataproviders.IdempotencyProductDataProvider",
+      "event": "call",
+      "id": 8,
+      "lineno": 27,
+      "method_id": "isDuplicate",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "idempotencyKey",
+          "object_id": 1745214556,
+          "value": "fc04fdcc-65fc-4047-a372-649f803f2b49"
+        },
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "value",
+          "object_id": 1745214556,
+          "value": "fc04fdcc-65fc-4047-a372-649f803f2b49"
+        }
+      ],
+      "path": "com/lucaslima/products/infra/dataproviders/IdempotencyProductDataProvider.java",
+      "receiver": {
+        "class": "com.lucaslima.products.infra.dataproviders.IdempotencyProductDataProvider",
+        "object_id": 426327539,
+        "value": "com.lucaslima.products.infra.dataproviders.IdempotencyProductDataProvider@19693df3"
+      },
+      "static": false,
+      "thread_id": 55
+    },
+    {
+      "elapsed": 0.00010021,
+      "event": "return",
+      "id": 9,
+      "parent_id": 8,
+      "return_value": {
+        "class": "java.lang.Boolean",
+        "object_id": 53100446,
+        "value": "true"
+      },
+      "thread_id": 55
+    },
+    {
+      "elapsed": 0.00010021,
+      "event": "return",
+      "id": 10,
+      "parent_id": 7,
+      "return_value": {
+        "class": "java.lang.Boolean",
+        "object_id": 53100446,
+        "value": "true"
+      },
+      "thread_id": 55
+    },
+    {
+      "elapsed": 0.00040034,
+      "event": "return",
+      "id": 11,
+      "parent_id": 2,
+      "return_value": {
+        "class": "org.springframework.http.ResponseEntity",
+        "object_id": 2119830050,
+        "value": "<409 CONFLICT Conflict,[]>"
+      },
+      "thread_id": 55
+    },
+    {
+      "elapsed": 0.00080003,
+      "event": "return",
+      "http_server_response": {
+        "headers": {},
+        "status": 409
+      },
+      "id": 12,
+      "parent_id": 1,
+      "thread_id": 55
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "POST /products (409) - 19:47:40.911",
+    "app": "products",
+    "language": {
+      "name": "java",
+      "version": "21+35-LTS-2513",
+      "engine": "Java HotSpot(TM) 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "request_recording",
+      "type": "requests"
+    },
+    "recording": {},
+    "git": {
+      "repository": "https://github.com/LucasLimaLL/products.git",
+      "branch": "develop",
+      "commit": "df45bfc8c38682f4405ca19b7b16a0c4fd64246f"
+    }
+  },
+  "classMap": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "name": "create",
+                                  "type": "function",
+                                  "static": false,
+                                  "location": "com/lucaslima/products/api/rest/controller/CreateProductController.java:40"
+                                }
+                              ],
+                              "name": "CreateProductController",
+                              "type": "class"
+                            }
+                          ],
+                          "name": "controller",
+                          "type": "package"
+                        }
+                      ],
+                      "name": "rest",
+                      "type": "package"
+                    }
+                  ],
+                  "name": "api",
+                  "type": "package"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "name": "isDuplicate",
+                              "type": "function",
+                              "static": false,
+                              "location": "com/lucaslima/products/infra/dataproviders/IdempotencyProductDataProvider.java:27"
+                            }
+                          ],
+                          "name": "IdempotencyProductDataProvider",
+                          "type": "class"
+                        }
+                      ],
+                      "name": "dataproviders",
+                      "type": "package"
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "name": "toDomain",
+                              "type": "function",
+                              "static": false,
+                              "location": "com/lucaslima/products/infra/presenters/ProductPresenter.java:24"
+                            }
+                          ],
+                          "name": "ProductPresenter",
+                          "type": "class"
+                        }
+                      ],
+                      "name": "presenters",
+                      "type": "package"
+                    }
+                  ],
+                  "name": "infra",
+                  "type": "package"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "name": "isDuplicate",
+                              "type": "function",
+                              "static": false,
+                              "location": "com/lucaslima/products/application/services/IdempotencyProductService.java:23"
+                            }
+                          ],
+                          "name": "IdempotencyProductService",
+                          "type": "class"
+                        }
+                      ],
+                      "name": "services",
+                      "type": "package"
+                    }
+                  ],
+                  "name": "application",
+                  "type": "package"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "name": "createProductWithIdNameDescriptionPriceCreateAt",
+                              "type": "function",
+                              "static": false,
+                              "location": "com/lucaslima/products/core/factories/ProductFactory.java:24"
+                            }
+                          ],
+                          "name": "ProductFactory",
+                          "type": "class"
+                        }
+                      ],
+                      "name": "factories",
+                      "type": "package"
+                    }
+                  ],
+                  "name": "core",
+                  "type": "package"
+                }
+              ],
+              "name": "products",
+              "type": "package"
+            }
+          ],
+          "name": "lucaslima",
+          "type": "package"
+        }
+      ],
+      "name": "com",
+      "type": "package"
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "POST /products"
+        }
+      ]
+    }
+  ]
+}

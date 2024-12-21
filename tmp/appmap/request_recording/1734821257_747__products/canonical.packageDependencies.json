@@ -1,0 +1,38 @@
+[
+  {
+    "caller": "HTTP server requests",
+    "callee": "com/lucaslima/products/api/rest/controller"
+  },
+  {
+    "caller": "com/lucaslima/products/api/rest/controller",
+    "callee": "com/lucaslima/products/application/services"
+  },
+  {
+    "caller": "com/lucaslima/products/api/rest/controller",
+    "callee": "com/lucaslima/products/infra/presenters"
+  },
+  {
+    "caller": "com/lucaslima/products/application/services",
+    "callee": "com/lucaslima/products/infra/dataproviders"
+  },
+  {
+    "caller": "com/lucaslima/products/infra/dataproviders",
+    "callee": "Database"
+  },
+  {
+    "caller": "com/lucaslima/products/infra/dataproviders",
+    "callee": "com/lucaslima/products/core/entities"
+  },
+  {
+    "caller": "com/lucaslima/products/infra/dataproviders",
+    "callee": "com/lucaslima/products/persistence/entities"
+  },
+  {
+    "caller": "com/lucaslima/products/infra/presenters",
+    "callee": "com/lucaslima/products/core/factories"
+  },
+  {
+    "caller": "com/lucaslima/products/persistence/entities",
+    "callee": "com/lucaslima/products/core/factories"
+  }
+]

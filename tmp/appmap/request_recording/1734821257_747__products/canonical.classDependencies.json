@@ -1,0 +1,14 @@
+[
+  {
+    "caller": "POST /products",
+    "callee": "com/lucaslima"
+  },
+  {
+    "caller": "com/lucaslima",
+    "callee": "insert into products (created_at,description,name,price,id) values (?,?,?,?,?)"
+  },
+  {
+    "caller": "com/lucaslima",
+    "callee": "select pe1_0.id,pe1_0.created_at,pe1_0.description,pe1_0.name,pe1_0.price from products pe1_0 where pe1_0.id=?"
+  }
+]

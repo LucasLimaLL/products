@@ -1,0 +1,12 @@
+[
+  "createdAt",
+  "description",
+  "headers",
+  "id",
+  "idempotencyKey",
+  "name",
+  "price",
+  "product",
+  "productDto",
+  "value"
+]
