@@ -1,4 +1,4 @@
-package com.lucaslima.products.infra.configuration;
+package com.lucaslima.products.configuration;
 
 import com.lucaslima.products.application.gateways.CreateProductGateway;
 import com.lucaslima.products.application.gateways.IdempotencyProductGateway;
